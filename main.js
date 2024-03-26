@@ -74,7 +74,7 @@ async function shortenUrl(url) {
         const copyBtn = newUrl.querySelector('.newUrl-btn');
         copyBtn.addEventListener('click', () => {
             navigator.clipboard.writeText(data);
-            copyBtn.innerHTML="Copied"
+            copyBtn.innerHTML="Copied✔️"
         });
     } catch (error) {
         console.error("Error shortening URL:", error);
